@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>El Dinero Explicado Sin M4M4D4s</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Knewave&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Kalam', cursive;
+      background: url('fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: black;
+    }
+    h1, h2 {
+      font-family: 'Knewave', cursive;
+      color: black;
+      margin: 0 0 20px 0;
+    }
+    .titulus {
+      color: #c24833;
+    }
+    header {
+      background: transparent;
+      padding: 40px 20px;
+      text-align: center;
+      color: black;
+    }
+    header p {
+      font-family: 'Kalam', cursive;
+      font-weight: 400;
+      color: black;
+      font-style: italic;
+      margin-top: 8px;
+    }
+    .highlight,
+    strong,
+    .button,
+    .price {
+      font-family: 'Kalam', cursive;
+      font-weight: 700;
+      color: black;
+    }
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      line-height: 1.7;
+      background: rgba(255 255 255 / 0.7);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    ul {
+      padding-left: 1.5em;
+    }
+    .button {
+      display: inline-block;
+      background-color: #c24833;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 10px;
+      margin: 10px 10px 0 0;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-weight: 700;
+      font-family: 'Kalam', cursive;
+    }
+    .button:hover {
+      background-color: #a53a28;
+    }
+    .price {
+      font-size: 1.5em;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .price .original {
+      text-decoration: line-through;
+      color: #777;
+      margin-right: 15px;
+      font-weight: 400;
+      font-family: 'Kalam', cursive;
+    }
+    .cover {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .cover img {
+      max-width: 300px;
+      border: 4px solid #c24833;
+      border-radius: 10px;
+    }
+    .testimonios {
+      background: rgba(255 255 255 / 0.7);
+      padding: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      color: black;
+    }
+    .testimonios blockquote {
+      font-family: 'Kalam', cursive;
+      font-weight: 400;
+      font-style: italic;
+      border-left: 4px solid #c24833;
+      margin: 20px 0;
+      padding-left: 20px;
+      color: black;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      color: black;
+      background: rgba(255 255 255 / 0.7);
+      border-radius: 12px 12px 0 0;
+    }
+    .centered-text {
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-family: 'Kalam', cursive;
+      color: black;
+      font-size: 1.2em;
+    }
+    .button-group {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .button-group .button {
+      margin: 10px 8px 0 8px;
+    }
+    #promo-timer {
+      font-family: 'Kalam', cursive;
+      font-weight: 700;
+      font-size: 1.3em;
+      text-align: center;
+      margin-top: 10px;
+      color: #c24833;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>El <span class="titulus">Dinero</span> Explicado Sin <span class="titulus">M4M4D4s</span></h1>
+    <p><em>Despierta. Entiende el juego. Y juega mejor que ellos.</em></p>
+  </header>
+
+  <div class="cta" style="background: #c24833; color: white; padding: 20px; text-align:center; font-family: 'Kalam', cursive; font-weight: 700;">
+    ¡Descarga el eBook que nadie en el sistema quiere que leas!
+  </div>
+
+  <section>
+    <div class="cover">
+      <img src="Portada.jpg" alt="Portada El Dinero Explicado Sin M4M4D4s" />
+    </div>
+
+    <div class="price" id="price-display">
+      <!-- Aquí inyectaremos el precio dinámico -->
+    </div>
+
+    <div id="promo-timer"></div>
+
+    <div class="button-group">
+      <a class="button" href="https://hotmart.link/TU-LINK-AQUI" target="_blank">Lo quiero YA</a>
+      <a class="button" href="https://hotmart.link/PRUEBA-GRATIS-AQUI" target="_blank">Descargar muestra gratuita</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>¿<span class="titulus">Cansado</span> de <span class="titulus">sobrevivir</span> sin <span class="titulus">entender</span> por qué?</h2>
+    <p>
+      Este no es otro librito de "haz tu presupuesto". Es <span class="highlight">una bofetada de realidad</span>
+      que te explica por qué trabajas tanto y el dinero nunca alcanza.
+    </p>
+    <p>
+      Desde los templarios y los billetes trampa hasta el <span class="highlight">dinero fiat que vale pura fe</span>, este eBook te lleva de la mano en un recorrido brutalmente honesto por la historia y el teatro actual del dinero.
+    </p>
+    <ul>
+      <li>👉🏻 Aprende cómo te la aplican los bancos con números que ni existen</li>
+      <li>👉🏻 Descubre qué es realmente el dinero (spoiler: no es riqueza)</li>
+      <li>👉🏻 Rompe las cadenas mentales que te tienen atrapado</li>
+    </ul>
+
+    <div class="centered-text">
+      ¡No te hará millonario, pero te hará consciente!
+    </div>
+
+    <div class="button-group">
+      <a class="button" href="https://hotmart.link/TU-LINK-AQUI" target="_blank">Comprar ahora</a>
+    </div>
+  </section>
+
+  <section class="testimonios">
+    <h2>Lo que dice la banda que ya lo leyó</h2>
+    <blockquote>
+      "Este libro me hizo entender que estaba metido en un juego amañado... y me dio las armas para dejar de ser un peón."
+    </blockquote>
+    <blockquote>
+      "Está contado como debería explicarse todo: sin tecnicismos, sin censura y sin miedo."
+    </blockquote>
+  </section>
+
+  <section>
+    <h2>¡Ojo! Este no es un eBook <span class="titulus">fresa</span>...</h2>
+    <p>
+      Si te gusta que te hablen bonito y con palabras mamadoras, este libro <strong>no es para ti</strong>.
+      Pero si estás hasta la madre de no entender cómo funciona el dinero, éste sí es tu momento.
+    </p>
+
+    <section id="galeria-capitulos" style="max-width:900px; margin: 40px auto; padding: 20px; background: rgba(255 255 255 / 0.7); border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+  <h2>Capítulos Destacados</h2>
+  <div class="gallery-grid">
+    <img src="galeria/01.jpg" alt="Capítulo 1" class="gallery-item" />
+    <img src="galeria/02.jpg" alt="Capítulo 2" class="gallery-item" />
+    <img src="galeria/03.jpg" alt="Capítulo 3" class="gallery-item" />
+    <img src="galeria/04.jpg" alt="Capítulo 4" class="gallery-item" />
+    <img src="galeria/05.jpg" alt="Capítulo 5" class="gallery-item" />
+    <!-- Agrega más imágenes según tengas -->
+  </div>
+</section>
+
+<!-- Modal para imagen ampliada -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-img" />
+  <div id="caption"></div>
+</div>
+
+<style>
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+    gap: 15px;
+  }
+  .gallery-item {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+  }
+  .gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  }
+
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 12px;
+  }
+  #caption {
+    margin: 15px auto;
+    text-align: center;
+    color: white;
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    max-width: 90%;
+  }
+  .close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+  }
+  .close:hover {
+    color: #c24833;
+  }
+</style>
+
+<script>
+  // Modal logic
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img');
+  const captionText = document.getElementById('caption');
+  const closeBtn = document.querySelector('.close');
+  const images = document.querySelectorAll('.gallery-item');
+
+  images.forEach(img => {
+    img.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.textContent = this.alt;
+    }
+  });
+
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+
+    <div class="button-group">
+      <a class="button" href="https://hotmart.link/TU-LINK-AQUI" target="_blank">Compra ahora y rompe el hechizo</a>
+      <a class="button" href="https://hotmart.link/PRUEBA-GRATIS-AQUI" target="_blank">Leer una muestra gratis</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ElPantoja. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    // Fecha actual
+    const now = new Date();
+
+    // Promo empieza mañana (9 dias desde hoy: 1 dia espera + 8 días promo)
+    const promoStart = new Date();
+    promoStart.setDate(now.getDate() + 1);
+    promoStart.setHours(0, 0, 0, 0);
+
+    // Promo termina 8 días después de inicio
+    const promoEnd = new Date(promoStart);
+    promoEnd.setDate(promoStart.getDate() + 8);
+    promoEnd.setHours(23, 59, 59, 999);
+
+    const priceDisplay = document.getElementById('price-display');
+    const promoTimer = document.getElementById('promo-timer');
+
+    function formatTime(num) {
+      return num.toString().padStart(2, '0');
+    }
+
+    function updateTimer() {
+      const now = new Date();
+
+      if (now < promoStart) {
+        // Antes de que empiece la promo: cuenta regresiva para el inicio
+        const diff = promoStart - now;
+        if (diff <= 0) return;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        priceDisplay.innerHTML = `<span class="original">$20 USD</span> $20 USD`;
+        promoTimer.textContent = `Promo comienza en: ${days}d ${formatTime(hours)}h ${formatTime(minutes)}m ${formatTime(seconds)}s`;
+      }
+      else if (now >= promoStart && now <= promoEnd) {
+        // Promo activa
+        const diff = promoEnd - now;
+        if (diff < 0) return;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        priceDisplay.innerHTML = `<span class="original">$20 USD</span> <span style="color:#c24833;">$13 USD</span>`;
+        promoTimer.textContent = `¡Promo activa! Termina en: ${days}d ${formatTime(hours)}h ${formatTime(minutes)}m ${formatTime(seconds)}s`;
+      }
+      else {
+        // Promo terminada
+        priceDisplay.innerHTML = `$20 USD`;
+        promoTimer.textContent = 'La promoción ha terminado.';
+      }
+    }
+
+    updateTimer();
+    setInterval(updateTimer, 1000);
+  </script>
+</body>
+</html>
